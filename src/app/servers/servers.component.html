@@ -1,3 +1,11 @@
-<button class="btn btn-primary" [disabled]="!allowNewServer">Add Server</button>
+<button class="btn btn-primary"
+        [disabled]="!allowNewServer"
+        (click)="onCreateServer()">Add Server</button>
+<!--<p>{{ allowNewServer }}</p>-->
+<!--<p [innerText]="allowNewServer"></p>-->
+ <!-- can also call a method/expression here, pay attention to the return type -->
+<!--<p [textContent]="allowNewServer"></p>-->
+
+<p>{{ serverCreationStatus }}</p>
 <app-server></app-server>
 <app-server></app-server>
